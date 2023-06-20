@@ -1,0 +1,172 @@
+body{
+    background-color: black
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    text-decoration: underline;
+    font-size: 4.57vw;
+}
+
+
+@media (min-width: 700px){
+    h1{
+        font-size: 2em;
+    }
+}
+
+main{
+    background-color: snow;
+    margin:  auto;
+    border-radius: 50px;
+    width: 90%;
+    font-size: 1em;
+}
+
+@media (min-width: 700px){
+    main{
+    font-size: 1.7vw;
+        }
+}
+
+.figures_top{
+    padding-top: 5%;
+}
+
+.figures_top figcaption{
+    text-align:center;
+}
+
+.top_fig{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 3888px;
+    border: solid black 3px;
+    border-radius: 50%;
+}
+
+
+
+@media (min-width: 700px){
+    .top_fig{
+        border-radius: 0%;
+        border-right: none;
+        border-left: none;
+        border-top: solid black 2%;
+        border-bottom: solid black 2%;
+
+    } 
+}
+
+
+.img-caption{
+    text-align: center;
+}
+
+article{
+    padding: 5%;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "bio bio"
+        "films films"
+        "quote quote"
+        "links links";
+}
+
+
+@media (min-width: 700px){
+    article{
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "bio films"
+        "quote quote"
+        "links links";
+    }
+}
+
+.bio{
+    grid-area: bio;
+    border-right: none;
+    border-bottom: solid black 1px;
+}
+
+@media(min-width: 700px){
+    .bio{
+    border-right: solid black 1px;  
+    border-bottom: none; 
+    }
+    
+}
+
+.bio p{
+    margin-right: 3%;
+}
+
+.films{
+    grid-area: films;
+    text-decoration: none;
+    
+}
+
+.films h3{
+    padding-left: 5%;
+}
+
+.films ul li a{
+    text-decoration: none;
+}
+
+.films ul li a:hover{
+    font-size: 1.1em;
+    color:darkblue;
+    transition: 0.2s ease;
+}
+
+.quote{
+    grid-area: quote;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+.quote p{
+    margin-right: 3%;
+    margin-left: 3%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+}
+
+.quote-text{
+    text-align: center;
+    margin-top: 10%;
+}
+.quote-mh{
+    text-align: right;
+}
+
+.links{
+    grid-area: links;
+    text-align: center;
+}
+
+.links a{
+    text-decoration: none;
+    font-size: 2em;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: 'Patua One', cursive;
+
+}
+
+.links a:hover{
+    color: darkorange;
+    transition: 0.2s ease;
+}
